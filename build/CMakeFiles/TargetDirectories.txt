@@ -1,3 +1,0 @@
-/home/biren/feature-test/build/CMakeFiles/feature_detection.dir
-/home/biren/feature-test/build/CMakeFiles/edit_cache.dir
-/home/biren/feature-test/build/CMakeFiles/rebuild_cache.dir
