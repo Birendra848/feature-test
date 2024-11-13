@@ -4,6 +4,8 @@
 #include "feature_detection/fast.hpp"
 #include "feature_detection/surf.hpp"
 #include "feature_detection/sift.hpp"
+#include "feature_detection/harris.hpp"
+#include "feature_detection/shi_tomasi.hpp"
 
 using namespace cv;
 using namespace std;
@@ -17,14 +19,17 @@ void saveImageWithPrefix(const Mat& img, const string& prefix, const string& ori
         cout << "Error: Could not save the image: " << outputPath << endl;
     }
 }
+
 int main(int argc, char** argv) {
-    if (argc != 2) {
-        cout << "Usage: " << argv[0] << " <image_name>" << endl;
+    if (argc != 3) {
+        cout << "Usage: " << argv[0] << " <feature_detector> <image_name>" << endl;
+        cout << "Available feature detectors: ORB, FAST, SURF, SIFT, HARRIS, SHI_TOMASI" << endl;
         return -1;
     }
 
+    string feature_detector = argv[1];
     string base_path = "/home/biren/feature-test/data/images/";
-    string image_name = argv[1];
+    string image_name = argv[2];
     string full_path = base_path + image_name;
 
     Mat img = imread(full_path);
@@ -36,15 +41,22 @@ int main(int argc, char** argv) {
     vector<KeyPoint> keypoints;
     Mat descriptors;
 
-    //feature detection
-
-    //detectFeaturesSURF(img, keypoints, descriptors);
-
-    //detectFeaturesORB(img, keypoints, descriptors);
-
-    detectFeaturesFAST(img, keypoints);
-
-    //detectFeaturesSIFT(img, keypoints, descriptors);
+    if (feature_detector == "ORB") {
+        detectFeaturesORB(img, keypoints, descriptors);
+    } else if (feature_detector == "FAST") {
+        detectFeaturesFAST(img, keypoints);
+    } else if (feature_detector == "SURF") {
+        detectFeaturesSURF(img, keypoints, descriptors);
+    } else if (feature_detector == "SIFT") {
+        detectFeaturesSIFT(img, keypoints, descriptors);
+    } else if (feature_detector == "HARRIS") {
+        detectFeaturesHarris(img, keypoints);
+    } else if (feature_detector == "SHI_TOMASI") {
+        detectFeaturesShiTomasi(img, keypoints);
+    } else {
+        cout << "Unknown feature detector: " << feature_detector << endl;
+        return -1;
+    }
 
     cout << "Number of features detected: " << keypoints.size() << endl;
 
@@ -57,10 +69,10 @@ int main(int argc, char** argv) {
     double fontScale = 1;
     int thickness = 2;
     Point textOrg(10, 50);
-    putText(img_keypoints, text, textOrg, fontFace, fontScale, Scalar::all(-1), thickness);
+    putText(img_keypoints, text, textOrg, fontFace, fontScale, Scalar(0, 255, 0), thickness);
 
     // Save result
-    saveImageWithPrefix(img_keypoints, "fast", image_name);
+    saveImageWithPrefix(img_keypoints, feature_detector, image_name);
 
     // Display the results
     namedWindow("Keypoints", WINDOW_NORMAL);

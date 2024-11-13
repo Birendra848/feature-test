@@ -1,0 +1,16 @@
+
+build/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.doc
+*.docx
+*.bmp
+*.gif
+*.tiff
+*.mp4
+*.avi
+*.mov
+*.wmv

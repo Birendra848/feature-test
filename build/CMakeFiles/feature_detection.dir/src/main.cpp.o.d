@@ -379,4 +379,6 @@ CMakeFiles/feature_detection.dir/src/main.cpp.o: \
  /home/biren/feature-test/src/feature_detection/orb.hpp \
  /home/biren/feature-test/src/feature_detection/fast.hpp \
  /home/biren/feature-test/src/feature_detection/surf.hpp \
- /home/biren/feature-test/src/feature_detection/sift.hpp
+ /home/biren/feature-test/src/feature_detection/sift.hpp \
+ /home/biren/feature-test/src/feature_detection/harris.hpp \
+ /home/biren/feature-test/src/feature_detection/shi_tomasi.hpp

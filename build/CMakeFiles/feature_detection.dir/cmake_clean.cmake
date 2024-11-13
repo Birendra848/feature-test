@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/feature_detection.dir/src/feature_detection/fast.cpp.o"
   "CMakeFiles/feature_detection.dir/src/feature_detection/fast.cpp.o.d"
+  "CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o"
+  "CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o.d"
   "CMakeFiles/feature_detection.dir/src/feature_detection/orb.cpp.o"
   "CMakeFiles/feature_detection.dir/src/feature_detection/orb.cpp.o.d"
+  "CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o"
+  "CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o.d"
   "CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.o"
   "CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.o.d"
   "CMakeFiles/feature_detection.dir/src/feature_detection/surf.cpp.o"

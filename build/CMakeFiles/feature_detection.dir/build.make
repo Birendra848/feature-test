@@ -139,13 +139,43 @@ CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/biren/feature-test/src/feature_detection/sift.cpp -o CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.s
 
+CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o: CMakeFiles/feature_detection.dir/flags.make
+CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o: /home/biren/feature-test/src/feature_detection/harris.cpp
+CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o: CMakeFiles/feature_detection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/biren/feature-test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o -MF CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o.d -o CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o -c /home/biren/feature-test/src/feature_detection/harris.cpp
+
+CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/biren/feature-test/src/feature_detection/harris.cpp > CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.i
+
+CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/biren/feature-test/src/feature_detection/harris.cpp -o CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.s
+
+CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o: CMakeFiles/feature_detection.dir/flags.make
+CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o: /home/biren/feature-test/src/feature_detection/shi_tomasi.cpp
+CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o: CMakeFiles/feature_detection.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/biren/feature-test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o -MF CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o.d -o CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o -c /home/biren/feature-test/src/feature_detection/shi_tomasi.cpp
+
+CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/biren/feature-test/src/feature_detection/shi_tomasi.cpp > CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.i
+
+CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/biren/feature-test/src/feature_detection/shi_tomasi.cpp -o CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.s
+
 # Object files for target feature_detection
 feature_detection_OBJECTS = \
 "CMakeFiles/feature_detection.dir/src/main.cpp.o" \
 "CMakeFiles/feature_detection.dir/src/feature_detection/orb.cpp.o" \
 "CMakeFiles/feature_detection.dir/src/feature_detection/fast.cpp.o" \
 "CMakeFiles/feature_detection.dir/src/feature_detection/surf.cpp.o" \
-"CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.o"
+"CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.o" \
+"CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o" \
+"CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o"
 
 # External object files for target feature_detection
 feature_detection_EXTERNAL_OBJECTS =
@@ -155,6 +185,8 @@ feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/orb.cp
 feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/fast.cpp.o
 feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/surf.cpp.o
 feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/sift.cpp.o
+feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o
+feature_detection: CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o
 feature_detection: CMakeFiles/feature_detection.dir/build.make
 feature_detection: /usr/local/lib/libopencv_gapi.so.4.1.0
 feature_detection: /usr/local/lib/libopencv_stitching.so.4.1.0
@@ -205,7 +237,7 @@ feature_detection: /usr/local/lib/libopencv_photo.so.4.1.0
 feature_detection: /usr/local/lib/libopencv_imgproc.so.4.1.0
 feature_detection: /usr/local/lib/libopencv_core.so.4.1.0
 feature_detection: CMakeFiles/feature_detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/biren/feature-test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable feature_detection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/biren/feature-test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable feature_detection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/feature_detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

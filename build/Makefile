@@ -153,6 +153,30 @@ src/feature_detection/fast.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/fast.cpp.s
 .PHONY : src/feature_detection/fast.cpp.s
 
+src/feature_detection/harris.o: src/feature_detection/harris.cpp.o
+.PHONY : src/feature_detection/harris.o
+
+# target to build an object file
+src/feature_detection/harris.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.o
+.PHONY : src/feature_detection/harris.cpp.o
+
+src/feature_detection/harris.i: src/feature_detection/harris.cpp.i
+.PHONY : src/feature_detection/harris.i
+
+# target to preprocess a source file
+src/feature_detection/harris.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.i
+.PHONY : src/feature_detection/harris.cpp.i
+
+src/feature_detection/harris.s: src/feature_detection/harris.cpp.s
+.PHONY : src/feature_detection/harris.s
+
+# target to generate assembly for a file
+src/feature_detection/harris.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/harris.cpp.s
+.PHONY : src/feature_detection/harris.cpp.s
+
 src/feature_detection/orb.o: src/feature_detection/orb.cpp.o
 .PHONY : src/feature_detection/orb.o
 
@@ -176,6 +200,30 @@ src/feature_detection/orb.s: src/feature_detection/orb.cpp.s
 src/feature_detection/orb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/orb.cpp.s
 .PHONY : src/feature_detection/orb.cpp.s
+
+src/feature_detection/shi_tomasi.o: src/feature_detection/shi_tomasi.cpp.o
+.PHONY : src/feature_detection/shi_tomasi.o
+
+# target to build an object file
+src/feature_detection/shi_tomasi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.o
+.PHONY : src/feature_detection/shi_tomasi.cpp.o
+
+src/feature_detection/shi_tomasi.i: src/feature_detection/shi_tomasi.cpp.i
+.PHONY : src/feature_detection/shi_tomasi.i
+
+# target to preprocess a source file
+src/feature_detection/shi_tomasi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.i
+.PHONY : src/feature_detection/shi_tomasi.cpp.i
+
+src/feature_detection/shi_tomasi.s: src/feature_detection/shi_tomasi.cpp.s
+.PHONY : src/feature_detection/shi_tomasi.s
+
+# target to generate assembly for a file
+src/feature_detection/shi_tomasi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feature_detection.dir/build.make CMakeFiles/feature_detection.dir/src/feature_detection/shi_tomasi.cpp.s
+.PHONY : src/feature_detection/shi_tomasi.cpp.s
 
 src/feature_detection/sift.o: src/feature_detection/sift.cpp.o
 .PHONY : src/feature_detection/sift.o
@@ -261,9 +309,15 @@ help:
 	@echo "... src/feature_detection/fast.o"
 	@echo "... src/feature_detection/fast.i"
 	@echo "... src/feature_detection/fast.s"
+	@echo "... src/feature_detection/harris.o"
+	@echo "... src/feature_detection/harris.i"
+	@echo "... src/feature_detection/harris.s"
 	@echo "... src/feature_detection/orb.o"
 	@echo "... src/feature_detection/orb.i"
 	@echo "... src/feature_detection/orb.s"
+	@echo "... src/feature_detection/shi_tomasi.o"
+	@echo "... src/feature_detection/shi_tomasi.i"
+	@echo "... src/feature_detection/shi_tomasi.s"
 	@echo "... src/feature_detection/sift.o"
 	@echo "... src/feature_detection/sift.i"
 	@echo "... src/feature_detection/sift.s"
