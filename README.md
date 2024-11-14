@@ -61,6 +61,7 @@ To build the project, follow these steps:
 
 To run the project:
 run the code with different feature detectors by specifying the detector name as a command-line argument:
+- Replace <te1.jpg> with the name of the image file you want to process. The image should be located in the data/images/ directory.
 ```sh
 #Example
 ./feature_detection ORB te1.jpg
