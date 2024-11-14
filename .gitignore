@@ -11,6 +11,11 @@ build/
 *.gif
 *.tiff
 *.mp4
+*.MP4
 *.avi
 *.mov
 *.wmv
+*.srt
+*.SRT
+*.zip
+*.tar

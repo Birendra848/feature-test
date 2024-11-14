@@ -6,6 +6,14 @@
 #include "feature_detection/sift.hpp"
 #include "feature_detection/harris.hpp"
 #include "feature_detection/shi_tomasi.hpp"
+#include "feature_detection/canny.hpp"
+#include "feature_detection/brisk.hpp"
+#include "feature_detection/brief.hpp"
+#include "feature_detection/mser.hpp"
+#include "feature_detection/kaze.hpp"
+#include "feature_detection/akaze.hpp"
+#include "feature_detection/hog.hpp"
+#include "feature_detection/gabor.hpp"
 
 using namespace cv;
 using namespace std;
@@ -23,7 +31,7 @@ void saveImageWithPrefix(const Mat& img, const string& prefix, const string& ori
 int main(int argc, char** argv) {
     if (argc != 3) {
         cout << "Usage: " << argv[0] << " <feature_detector> <image_name>" << endl;
-        cout << "Available feature detectors: ORB, FAST, SURF, SIFT, HARRIS, SHI_TOMASI" << endl;
+        cout << "Available feature detectors: ORB, FAST, SURF, SIFT, HARRIS, SHI_TOMASI, CANNY, BRISK, BRIEF, MSER, KAZE, AKAZE, HOG, GABOR" << endl;
         return -1;
     }
 
@@ -53,7 +61,23 @@ int main(int argc, char** argv) {
         detectFeaturesHarris(img, keypoints);
     } else if (feature_detector == "SHI_TOMASI") {
         detectFeaturesShiTomasi(img, keypoints);
-    } else {
+    } else if (feature_detector == "CANNY") {
+        detectFeaturesCanny(img, keypoints);
+    }    else if (feature_detector == "BRISK") {
+        detectFeaturesBRISK(img, keypoints, descriptors);
+    }    else if (feature_detector == "BRIEF") {
+        detectFeaturesBRIEF(img, keypoints, descriptors);
+    }    else if (feature_detector == "MSER") {
+        detectFeaturesMSER(img, keypoints);
+    } else if (feature_detector == "KAZE") {
+        detectFeaturesKAZE(img, keypoints, descriptors);
+    } else if (feature_detector == "AKAZE") {
+        detectFeaturesAKAZE(img, keypoints, descriptors);
+    } else if (feature_detector == "HOG") {
+        detectFeaturesHOG(img, keypoints);
+    }    else if (feature_detector == "GABOR") {
+        detectFeaturesGabor(img, keypoints);
+    }else {
         cout << "Unknown feature detector: " << feature_detector << endl;
         return -1;
     }
